@@ -17,17 +17,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to left, #573ab4,#fd1d60,#fc45b9);
+    background: linear-gradient(to left, #0097a7,#0097a7,#0097a7);
 }
 
 /* Formatação da div#container */
 div#container {
     width: 100%;
-    max-width: 300px;
+    max-width: 450px;
     height: auto;
     background: linear-gradient(to left, #573ab4,#fd1d60,#fc45b9);
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0px 0px 5px rgb(41, 41, 41);
@@ -35,7 +36,7 @@ div#container {
 
 /* Formatação da div.relogio, onde será mostrado os box que contém a hora, minutos e segundos */
 div#container div#relogio {
-    width: 96%;
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -45,8 +46,8 @@ div#container div#relogio {
 
 /* Formatação da div.box[hora, minuto, segundo] */
 div#relogio div.box {
-    width: 25%;
-    height: 60px;
+    width: 30%;
+    height: 90px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -63,12 +64,19 @@ span.two-points {
 }
 /* Formatação dos paragrafos */
 div.box p {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-family: 'fontdigital';
     color: white;
 }
 
 div.box p.description {
+    font-family: sans-serif;
     font-weight: 300;
-    font-size: .8rem;
+    font-size: .9rem;
+}
+
+p.horaDescrita {
+    font-family: sans-serif;
+    color: rgb(226, 226, 226);
+    margin-top: 10px;
 }
