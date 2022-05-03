@@ -14,4 +14,4 @@ function myClock() {
     document.querySelector('.horaDescrita').innerHTML = `${diaSemana[relogio.getDay()]}, ${relogio.getDate()} de ${mes[relogio.getMonth()]} de ${relogio.getFullYear()}`;
 }
 
-setInterval(myClock,500);// chama a função a cada 1s
+setInterval(myClock,1000);// chama a função a cada 1s
